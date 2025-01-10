@@ -37,3 +37,16 @@ mings = min(str1.split(' '), key=len)
 print(f'{mings} - {len(mings) }')
 
 
+cName= 'Python' 
+age = 40  
+relationship = 'single'
+
+relationship = 'it\s complicated'
+
+print(f'{relationship}')
+
+
+birthYear = input('what year were you born? ')
+age = 2025 - int(birthYear)
+print(f'You will be {age} years old in 2025')
+
