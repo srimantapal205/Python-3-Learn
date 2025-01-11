@@ -112,3 +112,14 @@ print(f'Reverse Item List : {copyItemlist}')
 
 new_letterList.reverse()
 print(f'Reverse Letter List : {new_letterList}')
+
+
+
+#Use full trick in List
+
+print(list(range(1, 100)))
+
+#none-unique list
+
+list1 = None 
+
