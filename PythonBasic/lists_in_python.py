@@ -79,3 +79,36 @@ new_numberSet.clear() # Clear all the items in the list
 print(f'After Clear Item - New Number set : {new_numberSet}')
 
 
+#Unsing index()	Returns the index of the first element with the specified value
+print(f'Index of cherry: {itemList.index('cherry')} ')
+print(f'Index of eggfruit: {itemList.index('eggfruit')} ')
+
+#using in operator
+print(f'Is in  eggfruit: {'eggfruit' in itemList} ')
+print(f'Is in  x: {'x' in itemList} ')
+
+letterList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'd', 'e', 'd', 'g']
+#using count()	Returns the number of elements with the specified value
+
+print(f'Count of c: {letterList.count('c')} ')
+print(f'Count of d: {letterList.count('d')} ')
+
+#sort()	Sorts the list
+letterList.sort()
+print(f'After Sort : {letterList}')
+
+new_letterList = letterList[:]
+print(sorted(new_letterList))
+
+
+#copy()	Returns a copy of the list
+
+copyItemlist = itemList.copy()
+print(f'Copy Item List : {copyItemlist}')
+
+#reverse()	Reverses the order of the list
+copyItemlist.reverse()
+print(f'Reverse Item List : {copyItemlist}')
+
+new_letterList.reverse()
+print(f'Reverse Letter List : {new_letterList}')
