@@ -64,3 +64,18 @@ print(f'New Number set : {new_numberSet}')
 new_numberSet.extend([9,10,11])
 print(f'New Number set : {new_numberSet}')
 
+
+#Removing Item
+new_numberSet.pop()
+print(f'After Remove Item - New Number set : {new_numberSet}')
+
+new_numberSet.pop(0) # Remove Item based on Index and can be stored in a variable
+print(f'After Remove Item - New Number set : {new_numberSet}')
+
+new_numberSet.remove(5) # Remove Item based on Value
+print(f'After Remove Item - New Number set : {new_numberSet}')
+
+new_numberSet.clear() # Clear all the items in the list
+print(f'After Clear Item - New Number set : {new_numberSet}')
+
+
