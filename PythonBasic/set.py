@@ -57,9 +57,29 @@ set2 = {4,5,6,7,8,9,10}
 # print(set1)
 
 intersection  = set1.intersection(set2)
+#Or
+intersection2 = set1 & set2
 print(intersection)
+print(intersection2)
 
 set3 = {1,2,3}
 set4 = {4,5,6,7,8,9,10}
 isdisjoint = set3.isdisjoint(set4)
 print(isdisjoint)
+
+union = set1.union(set2)
+#Or
+union2 = set1 | set2
+print(union)
+print(union2)
+
+
+subset = set1.issubset(set2)
+print(subset)
+subset2 = set3.issubset(set1)
+print(subset2)
+
+superset = set2.issuperset(set1)
+print(superset)
+superset2 = set1.issuperset(set3)
+print(superset2)
