@@ -97,3 +97,23 @@ print(1<=2>=3<=4)
 print('NOT operator')
 print(not(False))
 print(not(True))
+
+print(True == 1) #True
+print(' ' == 1) #False
+print([] == 1) #False
+print(10 == 10.0) #True
+print([] == []) #True
+
+
+# ==  double equals to operator is used to compare two values. It returns True if both values are equal otherwise False and  type of the values is not considered.
+
+print('is')
+print(True is True) #True
+print(True is 1) #False
+print(' ' is 1) #False
+print('1' is '1') #True
+print([] is 1) #False
+print(10 is 10) #True
+print([] is []) #False
+
+# is operator is used to compare the identity of two objects. It returns True if both values are same otherwise False and type of the values is considered. It's also known as identity operator. It's used to compare the memory location of two objects.
