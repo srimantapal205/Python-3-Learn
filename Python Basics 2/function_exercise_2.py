@@ -7,7 +7,7 @@ def highest_even(li):
     print(f'EvenList :{evenList}')
     return max(evenList)
 
-listItem = [10,4,5,7.33,60,80,13,67]
+listItem = [2, 10,4,5,7.33,60,80,13,67,2 ]
 
 print(highest_even(listItem))
 
