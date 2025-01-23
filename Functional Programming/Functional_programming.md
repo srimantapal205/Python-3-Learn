@@ -1,6 +1,8 @@
 ## Functional Programming:
 **Functional programming is a programming paradigm that focuses on:**
-**Separation of Concerns:** It organizes code into functions and data structures, ensuring that each function has a single, well-defined purpose.</P>
+
+**Separation of Concerns:** It organizes code into functions and data structures, ensuring that each function has a single, well-defined purpose.
+
 **Separation of Data and Behavior:** Unlike OOP, which combines methods (behavior) and attributes (data) into objects, FP treats data and functions as separate entities. Functions operate on data but don’t own or encapsulate it.</P>
 
 ### FP and OOP
