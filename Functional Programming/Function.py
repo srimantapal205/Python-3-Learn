@@ -63,4 +63,30 @@ Returns: An iterator of tuples, where the i-th tuple contains the i-th element f
 z1Item = [10,20,30]
 z2Item = [1,2,3]
 zipItem = zip(z1Item, z2Item)
-print(list(zipItem)) [(10, 1), (20, 2), (30, 3)]
+print(list(zipItem)) #[(10, 1), (20, 2), (30, 3)]
+
+#Reduce() Function:
+'''
+The reduce() function in Python is a tool for applying a function cumulatively to a sequence of elements, reducing it to a single value. It is part of the functools module, so you need to import it before use.
+
+from functools import reduce
+
+reduce(function, iterable, [initializer])
+
+function: A function that takes two arguments and performs some operation.
+iterable: A sequence (e.g., list, tuple) to be reduced.
+initializer (optional): A starting value for the reduction. If provided, it is placed before the first element of the iterable.
+
+'''
+rdLs = [2,3,4,5,5,6,5,6,7]
+from functools import reduce
+
+def accumulator(acc, item):
+    print(acc, item) # acc is starting value
+    return acc + item
+
+print(reduce(accumulator, rdLs, 0))# 43 #here 0 means default value #
+print(reduce(accumulator, rdLs, 10))#  #if  the default value is 10  output is 53
+
+
+
