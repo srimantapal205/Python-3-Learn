@@ -49,4 +49,18 @@ print(FilterOddValue)
 print(nItem)
 
 
+#zip() Function:
 
+'''
+The zip() function in Python is a built-in utility that combines elements from two or more iterables (e.g., lists, tuples, strings) into tuples. It essentially "zips" the iterables together, element by element.
+
+zip(*iterables)
+
+*iterables: One or more iterables (e.g., lists, tuples, strings).
+Returns: An iterator of tuples, where the i-th tuple contains the i-th element from each of the input iterables.
+    
+'''
+z1Item = [10,20,30]
+z2Item = [1,2,3]
+zipItem = zip(z1Item, z2Item)
+print(list(zipItem)) [(10, 1), (20, 2), (30, 3)]
