@@ -4,7 +4,7 @@
 <P>Separation of Data and Behavior: Unlike OOP, which combines methods (behavior) and attributes (data) into objects, FP treats data and functions as separate entities. Functions operate on data but don’t own or encapsulate it.</P>
 
 ### FP and OOP
-OOP: ** Encapsulation is a key principle. Data (attributes) and behavior (methods) are bundled together in objects. For example:
+OOP:** Encapsulation is a key principle. Data (attributes) and behavior (methods) are bundled together in objects. For example:
 + Wizard and Archer classes in OOP contain both attributes (e.g., health, mana) and methods (e.g., attack, defend).
 <p>FP: Instead of combining methods and attributes, FP separates them:</p>
     - Data is represented in simple structures like lists or dictionaries.
