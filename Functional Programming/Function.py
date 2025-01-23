@@ -43,6 +43,10 @@ filter(function, iterable)
 
 def checkOdd(item):
     return item%2 != 0
+nItem= [1,2,3,4,5,6,7,8,9]
+FilterOddValue = list(filter(checkOdd, nItem))        
+print(FilterOddValue)
+print(nItem)
 
 
 
