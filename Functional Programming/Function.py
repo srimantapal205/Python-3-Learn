@@ -89,4 +89,34 @@ print(reduce(accumulator, rdLs, 0))# 43 #here 0 means default value #
 print(reduce(accumulator, rdLs, 10))#  #if  the default value is 10  output is 53
 
 
+# Lambda Expressions
+'''
 
+Lambda expressions in Python are anonymous functions defined using the lambda keyword. They are typically used for small, simple operations and are a more concise way of creating functions without using the def keyword.
+
+lambda arguments: expression
+lambda param : action(param)
+'''
+addition = lambda x : x + x
+print(addition(6))
+
+numberPower = lambda n, p : n ** p;
+print(numberPower(2,2))
+print(numberPower(3,3))
+print(numberPower(9,3))
+
+lamdaItem = [1,2,3,4,5,6]
+laValue = lambda item: item * 2
+
+nwValue = list(map(laValue, lamdaItem))
+print(nwValue)
+
+nmLstValue = [9,8,7,6,5,4,3,2,1]
+
+lmdaEvenList = lambda nmlst : nmlst % 2 == 0
+evenNofilter = list(filter(lmdaEvenList, nmLstValue))
+print(evenNofilter)
+
+
+lmdReduce = reduce(lambda accumulator, item, : accumulator+item, evenNofilter) 
+print(lmdReduce)
