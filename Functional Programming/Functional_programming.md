@@ -45,3 +45,15 @@ Comparison of FP and OOP Goals:
 + Simplifies reasoning about code due to the emphasis on pure functions and immutability.
 + Makes debugging and testing easier since pure functions are isolated from external effects.
 + Fits well with parallel and concurrent programming due to the avoidance of shared state.
+
+
+### Higher Order Function
+# A function within a function where return statement is a function. like as
+
+    def greet(fun):
+        fun()
+
+    def greet2(): 
+        def func():
+        return 5
+        return func
