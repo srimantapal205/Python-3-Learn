@@ -79,3 +79,35 @@ kvlst = [1,2,3]
 
 newKVlst = {x : x *2 for x in kvlst}
 print(newKVlst)
+
+from collections import Counter
+elements = [1,2,3,1,2,3,4,5,1,2,3,2,2]
+# Count occurrences of each element
+element_counts = Counter(elements)
+# Extract repeated elements
+repeated_elements = [item for item in elements if element_counts[item] > 1]
+print(repeated_elements)
+
+def getAllRepeatItem(item):
+    ri = []
+    for i in item:
+        if item.count(i) > 1:
+            ri.append(i)
+    return ri
+        
+        
+        
+        
+elements2 = [1,2,3,1,2,3,4,5,1,2,3,2,2]     
+print(getAllRepeatItem(elements2))   
+
+def GetOnlyRepetedItem(item):
+    reptdItem =[]
+    
+    for i in item:
+        if item.count(i)>1:
+              if i not in reptdItem:
+                    reptdItem.append(i)
+    return reptdItem               
+
+print(GetOnlyRepetedItem(elements2))
