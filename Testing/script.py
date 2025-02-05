@@ -6,5 +6,5 @@ def do_stuff(num=0):
             return 'Please enter number'
     except ValueError as err:
         return err
-        
+
 
